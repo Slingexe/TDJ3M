@@ -1,0 +1,13 @@
+h1 {
+	color: #32cd32;
+	font-size: 2.5em;
+	font-family: Verdana;
+}
+p {
+	font-size: 1.5em;
+	font-family: Verdana, Sans-serif;
+}
+span {
+	font-size: 2em;
+	color: #1e90ff;
+}
