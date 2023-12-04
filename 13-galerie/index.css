@@ -1,0 +1,17 @@
+/* ajoutez vos styles ici */
+			
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+}
+
+.galleryItem  {
+    width: calc((100% / 3) - 20px);
+    min-width: 200px;
+}
+
+.galleryItem img { width: 100%; }

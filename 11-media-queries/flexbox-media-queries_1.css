@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+#contenant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenantItem { 
+    width: calc((100% / 5) - 10px);
+    height: 100px;
+    background-color: gray;
+    border-color: black; border-style: solid; border-width: 1px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .contenantItem { width: calc((100% / 4) - 8px); }
+}
+@media only screen and (max-width: 650px) {
+    .contenantItem { width: calc((100% / 3) - 6px); }
+}
+@media only screen and (max-width: 400px) {
+    .contenantItem { width: calc((100% / 2) - 4px); }
+}
