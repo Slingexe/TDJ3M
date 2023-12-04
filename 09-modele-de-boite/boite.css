@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+div#contenu div.contenuItem {
+    display: block;
+    border:1px black;
+    border-radius: 10px;
+    border-style:solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    background-image: linear-gradient(grey, white,white);
+    margin-bottom: 10px;
+}
+div#contenu div.contenuItem h4 {
+    font-size:25px;
+}
+div#contenu div.contenuItemContenu::first-letter {
+    font-size: 200%;
+}

@@ -1,0 +1,16 @@
+a {
+    display: block;
+    border: 1px solid #0066ff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0066ff;
+    background-color:#a3c8ff;
+    border-radius:5px;
+    padding:10px;
+}
