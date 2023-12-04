@@ -15,13 +15,26 @@
     border-color: black; border-style: solid; border-width: 1px;
     margin-bottom: 10px;
 }
-
+@media only screen and (max-width: 1000px) {
+    .contenantItem {
+        background-color: blue;
+    }
+}
 @media only screen and (max-width: 800px) {
-    .contenantItem { width: calc((100% / 4) - 8px); }
+    .contenantItem { 
+        width: calc((100% / 4) - 8px); 
+        background-color: red;
+    }
 }
 @media only screen and (max-width: 650px) {
-    .contenantItem { width: calc((100% / 3) - 6px); }
+    .contenantItem { 
+        width: calc((100% / 3) - 6px);
+        background-color: orange; 
+    }
 }
 @media only screen and (max-width: 400px) {
-    .contenantItem { width: calc((100% / 2) - 4px); }
+    .contenantItem { 
+        width: calc((100% / 2) - 4px); 
+        background-color: green;
+    }
 }
