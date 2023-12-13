@@ -1,0 +1,38 @@
+/*Body*/
+body {margin: 3px;background-color:gray;}
+div.page-wrapper {display:flex;flex-wrap:wrap;justify-content:space-around;}
+
+/* List and normal text */
+section.intro {order:2;padding:10px;
+    border: 1px solid black;border-radius:20px;
+    width: 72vw; height: 400px;
+    background-color: rgb(56, 56, 56);
+}
+aside.sidebar {order:1;padding:10px;
+    border: 1px solid black;border-radius:20px;
+    width: 20vw;
+    background-color: burlywood;
+}
+/* Div Main */
+div.main {order:3;padding:10px;display:flex;flex-wrap:wrap;justify-content:space-around;}
+div.explanation {width: 30vw;}
+div.participation {width:30vw}
+div.benefits {width: 30vw;}
+div.requirements {width: auto;}
+
+footer {padding: 20px;margin: 10px;width: 90vw;
+    border: 1px solid black;border-radius: 20px;
+    text-align: center;text-decoration: none;font-size: 30px;
+    background-color: black;
+}
+
+/* Text Modification */
+aside.sidebar a {color: brown;}
+aside.sidebar a:hover {color:red}
+section.intro { color: white;}
+section.intro a {color: aquamarine;}
+section.intro a:hover {color: aqua;}
+div.main a {color: darkblue;}
+
+footer a {margin: 10px; color: aquamarine;}
+footer a:hover {color: aqua;}
