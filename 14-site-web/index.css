@@ -1,0 +1,5 @@
+#header {display:flex;flex-wrap:wrap;justify-content:space-around;width:auto;border-bottom: 1px solid black;}
+#nav {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100px;border-left: 1px solid black;}
+#footer{display:flex;flex-wrap:wrap;justify-content:space-around;width: auto;border-top: 1px solid black;}
+.contenu {display:flex;flex-wrap:wrap;justify-content:space-around;}
+
