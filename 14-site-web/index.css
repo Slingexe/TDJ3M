@@ -1,5 +1,22 @@
+/* Color Pallet
+--text: #F8FDDD;
+--background: #3D2200;
+--primary: #AECF75;
+--secondary: #a3edbf;
+--accent: #F8FDDD;  
+*/
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Archivo%20Black:700|Poppins:400');
+
+div.contenu {display:flex;flex-wrap:wrap;justify-content:space-around;width:auto;}
 #header {display:flex;flex-wrap:wrap;justify-content:space-around;width:auto;border-bottom: 1px solid black;}
 #nav {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100px;border-left: 1px solid black;}
 #footer{display:flex;flex-wrap:wrap;justify-content:space-around;width: auto;border-top: 1px solid black;}
+#maincontent {display:flex;flex-wrap:wrap;justify-content:space-around;}
 .contenu {display:flex;flex-wrap:wrap;justify-content:space-around;}
 
+/* Main Content */
+
+
+/* Media Queries*/
+@media screen and (min-width: 600px) {}
