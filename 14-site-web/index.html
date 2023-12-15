@@ -1,22 +1,51 @@
 <!doctype html>
-	<html>
-		<head>
-            <title></title>
-			<link rel="stylesheet" media="screen" href="index.css">
-		</head>
-		<body>
-			<div class="contenu">	
-				<div id="header">
-					
-				</div>
-				<div id="nav"></div>
-				<div id="maincontent">
-					<div class="aboutus"></div>
-					<div class="whatwedo"></div>
-					<div class="ourrecentwork"></div>
-					<div class="ourclients"></div>
-				</div>
-				<div id="footer"></div>
+<html>
+	<head>
+        <title>Interest Marketing</title>
+		<link rel="stylesheet" media="screen" href="index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="contenu">	
+			<div id="header">
+				<img src="media/logo-trans.png" alt="Company Logo" width="400px" height="50px" />
+				<div class="dropdown">
+					<button onclick="menubutton()" class="dropbtn"><img src="media/menu.png" alt="menu" height="40px" /></button>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#home">Home</a>
+					  <a href="#about">About</a>
+					  <a href="#contact">Contact</a>
+					</div>
+				  </div>
+				  <script>
+					/* When the user clicks on the button, 
+					toggle between hiding and showing the dropdown content */
+					function myFunction() {
+					  document.getElementById("myDropdown").classList.toggle("show");
+					}
+
+					// Close the dropdown if the user clicks outside of it
+					window.onclick = function(event) {
+					  if (!event.target.matches('.dropbtn')) {
+					    var dropdowns = document.getElementsByClassName("dropdown-content");
+					    var i;
+					    for (i = 0; i < dropdowns.length; i++) {
+					      var openDropdown = dropdowns[i];
+					      if (openDropdown.classList.contains('show')) {
+					        openDropdown.classList.remove('show');
+					      }
+					    }
+					  }
+					}
+				</script>
 			</div>
-		</body>
-	</html>
+			<div id="maincontent">
+				<div class="aboutus"></div>
+				<div class="whatwedo"></div>
+				<div class="ourrecentwork"></div>
+				<div class="ourclients"></div>
+			</div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
