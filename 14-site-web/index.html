@@ -8,44 +8,53 @@
 	<body>
 		<div class="contenu">	
 			<div id="header">
-				<img src="media/logo-trans.png" alt="Company Logo" width="400px" height="50px" />
-				<div class="dropdown">
-					<button onclick="menubutton()" class="dropbtn"><img src="media/menu.png" alt="menu" height="40px" /></button>
-					<div id="myDropdown" class="dropdown-content">
-					  <a href="#home">Home</a>
-					  <a href="#about">About</a>
-					  <a href="#contact">Contact</a>
-					</div>
-				  </div>
-				  <script>
-					/* When the user clicks on the button, 
-					toggle between hiding and showing the dropdown content */
-					function myFunction() {
-					  document.getElementById("myDropdown").classList.toggle("show");
-					}
-
-					// Close the dropdown if the user clicks outside of it
-					window.onclick = function(event) {
-					  if (!event.target.matches('.dropbtn')) {
-					    var dropdowns = document.getElementsByClassName("dropdown-content");
-					    var i;
-					    for (i = 0; i < dropdowns.length; i++) {
-					      var openDropdown = dropdowns[i];
-					      if (openDropdown.classList.contains('show')) {
-					        openDropdown.classList.remove('show');
-					      }
-					    }
-					  }
-					}
-				</script>
+				<img class="headerimg" src="media/logo-trans.png" alt="Company Logo" width="100%" />
+				<a class="headerlinks" href="#aboutus">About us</a>
+				<a class="headerlinks" href="#ourrecentwork">Our Recent Work</a>
+				<a class="headerlinks" href="#outclients">Our Clients</a>
+				<a class="headerlinks" href="projects.html">Projects</a>
 			</div>
 			<div id="maincontent">
-				<div class="aboutus"></div>
-				<div class="whatwedo"></div>
-				<div class="ourrecentwork"></div>
-				<div class="ourclients"></div>
+				<div id="aboutus">
+					<h1>About us and what we do</h1>
+					<!--Fun fact this was AI Generated-->
+					<p>
+						Hello! I'm Evan Monroe, the mind behind Interest Marketing. Our approach is simple: we connect businesses with audiences through shared passions. In a world dominated by data, we focus on what truly matters—people's interests. Our mission is to transform marketing into a celebration of common ground, building genuine connections and fostering communities. Join us at Interest Marketing, where engagement goes beyond transactions, and brands find their place in the hearts of their audience.
+					</p>
+				</div>
+				<div id="ourrecentwork">
+					<h1>Our recent work</h1>
+
+				</div>
+				<div id="ourclients">
+					<h1>Our clients</h1>
+					<div class="clientlistdiv">
+						<p class="clientlist">TechConnect Solutions</p>
+						<p class="clientlist">Wanderlust Travel Co.</p>
+						<p class="clientlist">Harmony Hobbies</p>
+						<p class="clientlist">Serenity Spa & Wellness</p>
+						<p class="clientlist">CulinaryCraft Catering</p>
+						<p class="clientlist">Velocity Sports Gear</p>
+						<p class="clientlist">EcoSolutions Innovations</p>
+						<p class="clientlist">Harmonic Beats Music Studio</p>
+						<p class="clientlist">Pixel Perfect Photography</p>
+						<p class="clientlist">Sparkling Pet Boutique</p>
+						<p class="clientlist">Fashion Fusion Apparel</p>
+						<p class="clientlist">Mindful Living Retreats</p>
+						<p class="clientlist">Quantum Quest Educational Services</p>
+						<p class="clientlist">Nourish & Thrive Organic Market</p>
+						<p class="clientlist">Adventure Apparel Co.</p>
+					</div>
+				</div>
 			</div>
-			<div id="footer"></div>
+			<div id="footer">
+				<div id="contact">
+					
+				</div>
+				<div id="socials">
+
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
