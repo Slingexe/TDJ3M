@@ -10,11 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&family=Roboto:wght@900&display=swap');
 @import url("https://use.typekit.net/wgn1zhu.css");
 
-div.contenu {display:flex;flex-wrap:wrap;justify-content:space-around;width:auto;}
-.contenu {display:flex;flex-wrap:wrap;justify-content:space-around;}
-.hideform {display: none;}
+* {margin: 0px; box-sizing: border-box;}
 body {
-    margin:0px;
+    margin:10px;
     padding:0px;
     background-color:#3D2200;
     color:#F8FDDD;
@@ -25,7 +23,7 @@ body {
 img.headerimg {margin-bottom: 10px;}
 a.headerlinks {
     margin:auto; margin-bottom:10px; padding: 10px; padding-left: 5px; padding-right: 5px;
-    width: 150px; height:25px; 
+    width: 150px;
     color:#AECF75; text-decoration:none;
     border: 1px solid black; background-color: #2e3127; border-radius:20px;
     font-family: "proxima-nova", sans-serif;
@@ -34,33 +32,26 @@ a.headerlinks {
 }
 a.headerlinks:hover {color:#5d7534;}
 
+/* Contenu */
+#contenu {display:flex;flex-wrap:wrap;justify-content:space-around;width:100%;}
+
 /* Main Content */
-#maincontent {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100%;}
-#maincontent div {
-    margin: 10px; border: 1px solid black;
-    width: 100%; height: auto;
-}
-#maincontent h1 {
-    color: #f5ffb9; 
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-#maincontent p {
-    color: #F8FDDD;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
+#aboutus, #ourrecentwork, #ourclients {border: 1px solid black; padding: 10px;}
+div.maincontent div {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100%;
+    width: 100%; height: auto;}
+div.maincontent h1 {color: #f5ffb9; font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;}
+div.maincontent p {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;}
 div.clientlistdiv {
-    display:flex;flex-wrap:wrap;justify-content:center;width:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction: column;
 }
 #maincontent p.clientlist {
     width: 200px; height: 40px; padding-top: 20px;
     text-align: center;
     border: 1px solid black;
 }
-
 /* Footer */
 #footer{display:flex;flex-wrap:wrap;justify-content:space-around;width: auto;border-top: 1px solid black;}
 
