@@ -17,7 +17,7 @@ body {
     background-color:#3D2200;
     color:#F8FDDD;
 }
-
+.x-scroller{overflow-x: scroll; overflow-y:hidden; height:100px; width: 300px}
 /* Header */
 #header {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;border-bottom: 1px solid black;}
 img.headerimg {margin-bottom: 10px;}
@@ -31,9 +31,23 @@ a.headerlinks {
     font-style: normal;
 }
 a.headerlinks:hover {color:#5d7534;}
-
 /* Contenu */
 #contenu {display:flex;flex-wrap:wrap;justify-content:space-around;width:100%;}
+/* Footer */
+#footer{display:flex;flex-wrap:wrap;justify-content:space-around;
+    width: auto; height: 200px;
+    border-top: 1px solid black;
+    margin-top: 15px; padding-top: 20px;
+    background-image: url(media/Agency-Boulder.jpg);
+    background-size:cover;  
+    position: relative; 
+    bottom: 0px;
+}
+#contact {margin: 0px;background-color: #3D2200; height: 30px;}
+#socials {margin: 0px;margin-top: 10px;}
+h3.footer {color: #d8ec65; font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;}
+p.footer {color: #92a138;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;background-color: #3D2200;}
+img.socialimg {height: 50px;background-color: #3D2200;}
 
 /* Main Content */
 #aboutus, #ourrecentwork, #ourclients {border: 1px solid black; padding: 10px;}
@@ -41,19 +55,17 @@ div.maincontent div {display:flex;flex-wrap:wrap;justify-content:space-around;wi
     width: 100%; height: auto;}
 div.maincontent h1 {color: #f5ffb9; font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;}
 div.maincontent p {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;}
-div.clientlistdiv {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    flex-direction: column;
-}
-#maincontent p.clientlist {
-    width: 200px; height: 40px; padding-top: 20px;
+
+/* For index.html */
+/* Client List */
+li.clientlist {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;
+    width: 270px; height: 40px; padding-top: 20px; 
     text-align: center;
-    border: 1px solid black;
 }
-/* Footer */
-#footer{display:flex;flex-wrap:wrap;justify-content:space-around;width: auto;border-top: 1px solid black;}
+ul {list-style-type: none;}
+
+/* For projects.html*/
+
 
 /* PC/Laptop Display */
 @media screen and (min-width: 850px) {
