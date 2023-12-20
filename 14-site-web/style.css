@@ -17,7 +17,6 @@ body {
     background-color:#3D2200;
     color:#F8FDDD;
 }
-.x-scroller{overflow-x: scroll; overflow-y:hidden; height:100px; width: 300px}
 /* Header */
 #header {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;border-bottom: 1px solid black;}
 img.headerimg {margin-bottom: 10px;}
@@ -51,10 +50,17 @@ img.socialimg {height: 50px;background-color: #3D2200;}
 
 /* Main Content */
 #aboutus, #ourrecentwork, #ourclients {border: 1px solid black; padding: 10px;}
-div.maincontent div {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100%;
-    width: 100%; height: auto;}
+div.maincontent div {display:flex;flex-wrap:wrap;justify-content:space-around;width: 100%;height: auto;}
 div.maincontent h1 {color: #f5ffb9; font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;}
 div.maincontent p {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;}
+#ourrecentwork h1.headertext {
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px dotted black;
+}
+#container {height: 330px;display: flex;flex-wrap: nowrap;overflow-x: auto;justify-content: left;-webkit-overflow-scrolling: touch;}
+#container div {display: inline-block;width: 300px;height: 300px;margin: 5px;border: 1px solid black;padding: 3px;white-space: normal;text-align: center;flex: 0 0 auto;}
+
 
 /* For index.html */
 /* Client List */
@@ -65,9 +71,15 @@ li.clientlist {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weigh
 ul {list-style-type: none;}
 
 /* For projects.html*/
-
+div.work {margin-bottom: 10px; border-bottom: 4px solid black;}
 
 /* PC/Laptop Display */
 @media screen and (min-width: 850px) {
-    #nav {display: flex;}
+    /* Main Content */
+    #aboutus, #ourrecentwork, #ourclients {border: 1px solid black; padding: 10px;}
+    div.aboutandrecent {display:flex;flex-wrap:wrap;justify-content:left;width: 100%;height: auto;flex-direction: column;margin: 10px;}
+    div.maincontent {display:flex;flex-wrap:wrap;justify-content:left;width: 100%;height: auto;}
+    div.maincontent #aboutus {width:58%;height:300px;}
+    div.maincontent #ourrecentwork {width: 58%;}
+    div.maincontent #ourclients {width: 40%;height: 715px;order:2;position: absolute;right: 0px;}
 }
