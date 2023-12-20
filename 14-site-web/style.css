@@ -72,6 +72,7 @@ ul {list-style-type: none;}
 
 /* For projects.html*/
 div.work {margin-bottom: 10px; border-bottom: 4px solid black;}
+div.work h1 {width: 100%;text-align: center;}
 
 /* PC/Laptop Display */
 @media screen and (min-width: 850px) {
