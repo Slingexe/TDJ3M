@@ -46,7 +46,7 @@ a.headerlinks:hover {color:#5d7534;}
 #socials {margin: 0px;margin-top: 10px;}
 h3.footer {color: #d8ec65; font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;}
 p.footer {color: #92a138;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;background-color: #3D2200;}
-img.socialimg {height: 50px;background-color: #3D2200;}
+img.socialimg {height: 50px;}
 
 /* Main Content */
 #aboutus, #ourrecentwork, #ourclients {border: 1px solid black; padding: 10px;}
@@ -65,7 +65,7 @@ div.maincontent p {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-w
 /* For index.html */
 /* Client List */
 li.clientlist {color: #F8FDDD;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;
-    width: 270px; height: 40px; padding-top: 20px; 
+    width: 270px; height: 40px; padding-top: 20px; padding-right: 30px;
     text-align: center;
 }
 ul {list-style-type: none;}
