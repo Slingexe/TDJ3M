@@ -20,6 +20,7 @@
   --secondary: #b8d7b2;
   --accent: #5fb567;
   --link: #236ac7;
+  --linkhover: #236ac7;
 }
 
 .dark-mode {
@@ -29,6 +30,7 @@
   --secondary: #2f4d28;
   --accent: #68ac6e;
   --link: #70aeff;
+  --linkhover: #0e294d;
 }
 
 
@@ -37,15 +39,16 @@
 body {background-color:var(--background);}
 div.button {border: 2px solid var(--accent);background-color: var(--secondary);padding: 10px;width: 200px;margin-right: 10px;margin-bottom: 10px;border-radius: 10px;}
 div.button:hover {border: 1px solid var(--secondary);background-color: var(--accent);}
-a.buttonurl {text-decoration: none;font-size: 18px;font-family: 'Oxygen', sans-serif;color: var(--link);}
+a.buttonurl {text-decoration: none;font-size: 18px;font-family: 'Oxygen', sans-serif;color: var(--link);width: 100%;height: 100%;}
+a.buttonurl:hover {color: var(--linkhover);}
 h1 {color: var(--text);font-family: 'Oxygen', sans-serif;}
 p {color: var(--text);font-size: 18px;font-family: 'Roboto', sans-serif;}
 
 /** Header */
-div.header {border-bottom: 3px solid var(--accent);}
+div.header {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;border-bottom: 3px solid var(--accent);position:fixed;top:0px;background-color: var(--background);}
 h1.title {text-align: center;color:var(--text);}
 div.topbuttons {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;}
-button.themeswitcher {position:fixed; right: 20px;top: 15px;}
+button.themeswitcher {background-color: var(--secondary);color: var(--text);padding: 6px;margin-left: 15px;}
 
 /** Content*/
 div.maincontent {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;}
@@ -69,4 +72,21 @@ div.growpage {height: 300px;}
 
 @media screen and (max-width: 600px) {
   h1.title {width: 75%;}
+}
+
+
+/** Fill Header */
+
+@media screen and (min-width:1700px) {
+  div.fillheader {height: 100px;}
+}
+@media screen and (min-width:930px) and (max-width:1690px) {
+  div.fillheader {height: 150px;}
+}
+@media screen and (min-width:700px) and (max-width:920px) {
+  div.fillheader {height: 200px;}
+}
+@media screen and (min-width:0px) and (max-width:690px) {
+  div.fillheader {height: 0px;}
+  div.header {position:relative}
 }
