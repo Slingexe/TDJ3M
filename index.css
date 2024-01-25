@@ -4,26 +4,33 @@
 
 
 /** Color Scheme */
-@media (prefers-color-scheme: light) {
-  :root {
-    --text: #1a1b0e;
-    --background: #f5f6ef;
-    --primary: #3c411b;
-    --secondary: #b8d7b2;
-    --accent: #5fb567;
-    --link: #236ac7;
-  }
+:root {
+  --text: #f0f1e4;
+  --background: #0f1009;
+  --primary: #c7cca3;
+  --secondary: #2f4d28;
+  --accent: #68ac6e;
+  --link: #70aeff;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #f0f1e4;
-    --background: #0f1009;
-    --primary: #c7cca3;
-    --secondary: #2f4d28;
-    --accent: #68ac6e;
-    --link: #70aeff;
-  }
+
+.light-mode {
+  --text: #1a1b0e;
+  --background: #f5f6ef;
+  --primary: #3c411b;
+  --secondary: #b8d7b2;
+  --accent: #5fb567;
+  --link: #236ac7;
 }
+
+.dark-mode {
+  --text: #f0f1e4;
+  --background: #0f1009;
+  --primary: #c7cca3;
+  --secondary: #2f4d28;
+  --accent: #68ac6e;
+  --link: #70aeff;
+}
+
 
 /** Wildcards */
 * {margin: 0px; padding: 0px;}
@@ -38,6 +45,7 @@ p {color: var(--text);font-size: 18px;font-family: 'Roboto', sans-serif;}
 div.header {border-bottom: 3px solid var(--accent);}
 h1.title {text-align: center;color:var(--text);}
 div.topbuttons {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;}
+button.themeswitcher {position:fixed; right: 20px;top: 15px;}
 
 /** Content*/
 div.maincontent {display:flex;flex-wrap:wrap;justify-content:center;width:auto;flex-direction: row;text-align: center;}
@@ -59,4 +67,6 @@ div.other
 div.growpage {height: 300px;}
 
 
-@media screen and (min-width: 850px) {}
+@media screen and (max-width: 600px) {
+  h1.title {width: 75%;}
+}
