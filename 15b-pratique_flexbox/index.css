@@ -1,3 +1,5 @@
+body {background-color: white;}
+
 #wrapper {display:flex;flex-wrap:wrap;justify-content:space-around;}
 footer {
     background-color: green;color: black;border-radius: 20px;

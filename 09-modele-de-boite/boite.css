@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
 
+body {background-color: white;}
+
 div#contenu div.contenuItem {
     display: block;
     border:1px black;

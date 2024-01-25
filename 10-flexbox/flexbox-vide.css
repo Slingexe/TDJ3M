@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+body {background-color: white;}
+
 #contenu {
     display: flex;
     flex-flow: wrap;
